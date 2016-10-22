@@ -12,6 +12,8 @@ body {
     font-weight: 900;
     color: #fff;
     letter-spacing: -2vw;
+    margin: 0px;
+    margin-left: 25px;
 }
 
 header{
@@ -22,15 +24,18 @@ header{
 
 article{
   padding: 1em;
-  border: 2px solid #999;
   border-radius: 25px;
-  padding: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
   margin-top:-5px;
   max-width: 1000px;
+  background-color: #111
 }
 
 nav{
-  margin-left: 50px;
+  margin-top: 20px;
+  margin-left: 25px;
   font-size: 26px;
   padding-bottom:10px;
 }
@@ -44,7 +49,6 @@ p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
-  margin: 33px;
 }
 
 pre {
@@ -82,7 +86,7 @@ div {
 }
 
 #notice {
-  color: A6E22E;
+  color: #A6E22E;
 }
 
 .field_with_errors {
