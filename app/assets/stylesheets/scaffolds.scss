@@ -1,10 +1,43 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #272822;
+  color: #eee;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
   margin: 33px;
+}
+
+#master_header{ 
+    font-size: 20vw;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -2vw;
+}
+
+header{
+  clear: left;
+  margin-top: 7vw;
+  height: 12vw;
+}
+
+article{
+  padding: 1em;
+  border: 2px solid #999;
+  border-radius: 25px;
+  padding: 25px;
+  margin-top:-5px;
+  max-width: 1000px;
+}
+
+nav{
+  margin-left: 50px;
+  font-size: 26px;
+  padding-bottom:10px;
+}
+
+nav a{
+  margin-right: 20px;
+  text-decoration: none;
 }
 
 p, ol, ul, td {
@@ -21,15 +54,14 @@ pre {
 }
 
 a {
-  color: #000;
+  color: #66D9EF;
 
   &:visited {
-    color: #666;
+    color: #F92672;
   }
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #A6E22E;
   }
 }
 
@@ -50,18 +82,18 @@ div {
 }
 
 #notice {
-  color: green;
+  color: A6E22E;
 }
 
 .field_with_errors {
   padding: 2px;
-  background-color: red;
+  background-color: #F92672;
   display: table;
 }
 
 #error_explanation {
   width: 450px;
-  border: 2px solid red;
+  border: 2px solid #F92672;
   padding: 7px;
   padding-bottom: 0;
   margin-bottom: 20px;
@@ -74,7 +106,7 @@ div {
     font-size: 12px;
     margin: -7px;
     margin-bottom: 0;
-    background-color: #c00;
+    background-color: #F92672;
     color: #fff;
   }
 
