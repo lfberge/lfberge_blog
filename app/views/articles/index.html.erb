@@ -2,11 +2,20 @@
 
 <% @articles.each do |article| %>
   <div id=content_article>
-    <h2><%= article.title %></h2>
+    <%= link_to article do%>
+      <h2><%= article.title %></h2>
+    <% end %>
+
     <p><%= article.ingress %></p>
-      <%= link_to 'Show', article %>
-      <%= link_to 'Edit', edit_article_path(article) %> 
-      <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %> 
+
+    <% if !article.body.blank? %>
+      <%= link_to 'Read more', article %>
+    <% end %>
+
+      <p class=hidden>
+        <%= link_to 'Edit', edit_article_path(article) %> 
+        <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' } %> 
+      </p>
   </div>
 <% end %>
 
